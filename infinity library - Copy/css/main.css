@@ -1,0 +1,34 @@
+:root {
+  --height: 200px;
+  --width: 100%;
+  --depth: 200px;
+  --color-shelf-back-panel: #a17941;
+  --color-shelf-bottom-panel: #795832;
+  --color-shelf-bottom-panel-front: #9b7d50;
+  --color-shelf-side-panel: #956e39;
+  --color-shelf-shadow: #653b17;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+  
+}
+
+body{
+  /* correct relative path to the resources folder (one level up from css/) */
+  background-color: #f5f3ef; /* fallback color */
+  background-image: url("../resources/automn-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+a{
+  text-decoration: none;
+}
+
+
