@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>infinity</title>
+    
+</head>
+    <body>
+    
+
+        <nav class="banner spacing" id="navigation">
+
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse</a>
+            <a href="#">Music</a>
+            <a href="#">Submit</a> 
+            
+
+        </nav>
+
+        <div class="branding">
+        <img src="resources/infinity eye neo.png" height="250px" width="400px" >
+        </div> 
+
+      <section class="hero">
+       <div class="container container--main" >
+    <div class="cuboid">
+      <div class="cuboid__face cuboid__face--bottom"></div>
+      <div class="cuboid__face cuboid__face--front"></div>
+      <div class="cuboid__face cuboid__face--back"></div>
+    </div>
+  </div>
+  <div class="books-container">
+    
+    <img src="resources/book covers/1.jpg" class="book" alt="the hobbit">
+    <img src="resources/book covers/171880184.jpeg" class="book">
+    <img src="resources/book covers/20211228_133817.jpg" class="book">
+    <img src="resources/book covers/4123zOAwAgL.jpg" class="book">
+  </div>
+  <div class="floor-thickness"><h1>popular today</h1></div>
+  
+  <div class="container container--main">
+    <div class="cuboid">
+      <div class="cuboid__face cuboid__face--bottom"></div>
+      <div class="cuboid__face cuboid__face--front"></div>
+      <div class="cuboid__face cuboid__face--back"></div>
+    </div>
+  </div>
+  <div class="books-container">
+    <img src="resources/book covers/41smKqfC6tL._SX311_BO1,204,203,200_.jpg" class="book">
+    <img src="resources/book covers/41XPhFCGoOL._AC_SY780_.jpg" class="book">
+    <img src="resources/book covers/51vcFtW2S3L._SL500_.jpg" class="book">
+    <img src="resources/book covers/61CGxatMVrL._AC_SY780_.jpg" class="book">
+  </div>
+  <div class="floor-thickness"><h1>recommandtions</h1></div>
+  <div class="container container--main">
+    <div class="cuboid">
+      <div class="cuboid__face cuboid__face--bottom"></div>
+      <div class="cuboid__face cuboid__face--front"></div>
+      <div class="cuboid__face cuboid__face--back"></div>
+    </div>
+  </div>
+  <div class="books-container">
+  <img src="resources/book covers/61hxlW+vz7L.jpg" class="book">
+  <img src="resources/book covers/61PLvXIiNIL.jpg" class="book">
+  <img src="resources/book covers/713gSnLgjbL.jpg" class="book">
+  <img src="resources/book covers/71FxgtFKcQL.jpg" class="book">
+  </div>
+  <div class="floor-thickness"><h1>all time favorite</h1></div>
+</section>
+
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Book modal: populated when a book is clicked -->
+    <div class="book-modal" id="bookModal" aria-hidden="true">
+      <div class="book-modal__card" role="dialog" aria-modal="true">
+        <button class="book-modal__close" id="modalClose" aria-label="Close">&times;</button>
+        <div class="book-modal__media">
+          <img src="" alt="" id="modalImage">
+        </div>
+        <div class="book-modal__info">
+          <h2 id="modalTitle">Book Title</h2>
+          <p class="book-modal__meta" id="modalMeta"></p>
+          <p id="modalDesc">Book description goes here. Add data attributes to the image elements (data-title, data-desc, data-author) to populate this area.</p>
+          <div class="book-modal__actions">
+            <button id="modalRead" class="btn btn--primary">Read</button>
+            <button id="modalMore" class="btn">More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript/script.js"></script>
+    </body>
+</html>
