@@ -257,7 +257,10 @@
   width: 60%;
   box-sizing: border-box;
   overflow: auto;
-  background-image: url("../resources/automn-background.jpg");
+  background-image: url("/resources/automn\ overly-background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
  
 }
 
