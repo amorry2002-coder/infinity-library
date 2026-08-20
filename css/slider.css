@@ -1,0 +1,136 @@
+:root {
+  --swiper-theme-color: #222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+html,
+body {
+  font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+
+.player {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+#canvas1 {
+    display: block;
+    border: 3px solid #1f2937;
+    border-radius: 18px;
+    background: #5b5f66;
+    height: 500px;
+    width: 500px;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+#play {
+    width: 72px;
+    height: 72px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(239, 68, 68, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#play:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 14px 26px rgba(239, 68, 68, 0.45);
+}
+
+#play:active {
+    transform: scale(0.97);
+}
+
+#module {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+}
+#module .swiper {
+  width: 100%;
+  padding-bottom: 4rem;
+}
+#module .swiper .swiper-pagination {
+  bottom: 0 !important;
+}
+#module .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 11px !important;
+  height: 11px !important;
+  border-radius: 11px !important;
+}
+#module .swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1rem;
+  cursor: pointer;
+  max-width: 100%;
+}
+#module .swiper .swiper-slide:hover a {
+  text-decoration: underline !important;
+}
+#module .swiper .swiper-slide .img {
+  position: relative;
+  width: 100%;
+}
+#module .swiper .swiper-slide .img img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  transition: all 750ms ease;
+  max-width: 100%;
+}
+#module .swiper .swiper-slide .img img.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+#module .swiper .swiper-slide .img img.viynl {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transform: translateX(0%) rotate(-180deg);
+}
+#module .swiper .swiper-slide .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: #111;
+  font-weight: 500;
+}
+#module .swiper .swiper-slide .content .title a {
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+}
+#module .swiper .swiper-slide .content .title a:hover {
+  text-decoration: underline;
+}
+#module .swiper .swiper-slide-active .img img.cover {
+  transform: translateX(-20%);
+}
+#module .swiper .swiper-slide-active .img img.viynl {
+  transform: translateX(30%) rotate(0deg);
+}
+
+
+

@@ -3,9 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'><link rel="stylesheet" href="css/slider.css">
+
+
     <title>Document</title>
 </head>
 <body>
+    <nav class="banner spacing">
+    <a href="Index.html">Home</a>
+    <a href="Browse.html">Browse</a>
+    <a href="Music.html">Music</a>  
+    <a href="Submit.html">Submit</a>
+  </nav>
+
+    <div class="player">
+        <canvas id="canvas1"></canvas>
+        <button id="play" aria-label="Play or pause music">Play</button>
+    </div>
+
+     <section id="module">
+      
+    <div class="container container--browse" >
+    <div class="cuboid">
+      <div class="cuboid__face cuboid__face--bottom"></div>
+      <div class="cuboid__face cuboid__face--front"></div>
+      <div class="cuboid__face cuboid__face--back"></div>
+    </div>
+  </div>
+  
+     <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="img">
+          <img class="cover" src="https://i.ibb.co/nsxZS4SB/cover-1.jpg" />
+          <img class="viynl" src="https://i.ibb.co/qfHgPFB/vinyl-1.png" />
+        </div>
+        <div class="content">
+          <span class="title"><a href="#">Tierra Whack</a></span>
+          <span class="text">WORLD WIDE WHACK Opaque Spring Green Vinyl</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img class="cover" src="https://i.ibb.co/twhXnwWV/cover-2.jpg" />
+          <img class="viynl" src="https://i.ibb.co/RGDHLQTr/vinyl-2.png" />
+        </div>
+        <div class="content">
+          <span class="title"><a href="#">Lana Del Rey</a></span>
+          <span class="text">EXCLUSIVE Born To Die Vinyl</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img class="cover" src="https://i.ibb.co/tpqtY03m/cover-3.jpg" />
+          <img class="viynl" src="https://i.ibb.co/DfcDvTYQ/vinyl-3.png" />
+        </div>
+        <div class="content">
+          <span class="title"><a href="#">Metallica</a></span>
+          <span class="text">Garage Inc Vinyl (2016 Reissue)</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img class="cover" src="https://i.ibb.co/rfs0qKLL/cover-4.jpg" />
+          <img class="viynl" src="https://i.ibb.co/39t3TLCK/vinyl-4.png" />
+        </div>
+        <div class="content">
+          <span class="title"><a href="#">Black Flag</a></span>
+          <span class="text">Black Flag: My War Vinyl LP </span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img class="cover" src="https://i.ibb.co/W403RN79/cover-5.jpg" />
+          <img class="viynl" src="https://i.ibb.co/whSrFM4y/vinyl-5.png" />
+        </div>
+        <div class="content">
+          <span class="title"><a href="#">Elliott Smith</a></span>
+          <span class="text">FIGURE 8 </span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img class="cover" src="https://i.ibb.co/nNqJkc6x/cover-6.jpg" />
+          <img class="viynl" src="https://i.ibb.co/8D4rZrWJ/vinyl-6.png" />
+        </div>
+        <div class="content">
+          <span class="title"><a href="#">Sum 41</a></span>
+          <span class="text">Chuck Ltd Color Vinyl 160gm</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img class="cover" src="https://i.ibb.co/nsxZS4SB/cover-1.jpg" />
+          <img class="viynl" src="resources/vinyl2.png" />
+        </div>
+        <div class="content">
+          <span class="title"><a href="#">Tierra Whack</a></span>
+          <span class="text">WORLD WIDE WHACK Opaque Spring Green Vinyl</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+ 
+
+ 
     
+    <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script><script  src="javascript/slider.js"></script>
+
 </body>
 </html>
