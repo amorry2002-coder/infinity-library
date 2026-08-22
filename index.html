@@ -19,9 +19,16 @@
         <a href="submit.html">Submit</a>
       </nav>
 
-        <div class="branding">
-        <img src="resources/infinity eye neo.png" height="250px" width="400px" >
-        </div> 
+        <header class="branding">
+        <img src="resources/infinity eye neo.png" height="250" width="400" alt="Infinity Library">
+        <div class="welcome">
+          <p class="eyebrow">Dissappear</p>
+          <h1>World awaits</h1>
+          <p>Tales from far and wide, of the past and the future, of other worlds</p>
+        </div>
+        </header>
+
+
 
       <section class="hero">
        <div class="container container--main" >
@@ -31,12 +38,12 @@
       <div class="cuboid__face cuboid__face--back"></div>
     </div>
   </div>
-  <div class="books-container">
+  <div class="books-container" aria-label="Popular books">
     
     <img src="resources/book covers/1.jpg" class="book" alt="the hobbit">
-    <img src="resources/book covers/171880184.jpeg" class="book">
-    <img src="resources/book covers/20211228_133817.jpg" class="book">
-    <img src="resources/book covers/4123zOAwAgL.jpg" class="book">
+    <img src="resources/book covers/171880184.jpeg" class="book" alt="Featured book">
+    <img src="resources/book covers/20211228_133817.jpg" class="book" alt="Featured book">
+    <img src="resources/book covers/4123zOAwAgL.jpg" class="book" alt="Featured book">
   </div>
   <div class="floor-thickness"><h1>popular today</h1></div>
   
@@ -53,7 +60,7 @@
     <img src="resources/book covers/51vcFtW2S3L._SL500_.jpg" class="book">
     <img src="resources/book covers/61CGxatMVrL._AC_SY780_.jpg" class="book">
   </div>
-  <div class="floor-thickness"><h1>recommandtions</h1></div>
+  <div class="floor-thickness"><h1>recommendations</h1></div>
   <div class="container container--main">
     <div class="cuboid">
       <div class="cuboid__face cuboid__face--bottom"></div>
@@ -67,7 +74,7 @@
   <img src="resources/book covers/713gSnLgjbL.jpg" class="book">
   <img src="resources/book covers/71FxgtFKcQL.jpg" class="book">
   </div>
-  <div class="floor-thickness"><h1>all time favorite</h1></div>
+  <div class="floor-thickness"><h1>all-time favorites</h1></div>
   
   <div class="container container--main">
     <div class="cuboid">
@@ -91,8 +98,8 @@
     <div class="overlay" id="overlay"></div>
 
     <!-- Book modal: populated when a book is clicked -->
-    <div class="book-modal" id="bookModal" aria-hidden="true">
-      <div class="book-modal__card" role="dialog" aria-modal="true">
+      <div class="book-modal" id="bookModal" aria-hidden="true">
+        <div class="book-modal__card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <button class="book-modal__close" id="modalClose" aria-label="Close">&times;</button>
         <div class="book-modal__media">
           <img src="" alt="" id="modalImage">
@@ -102,8 +109,8 @@
           <p class="book-modal__meta" id="modalMeta"></p>
           <p id="modalDesc">Book description goes here. Add data attributes to the image elements (data-title, data-desc, data-author) to populate this area.</p>
           <div class="book-modal__actions">
-            <button id="modalRead" class="btn btn--primary">Read</button>
-            <button id="modalMore" class="btn">More</button>
+            <button id="modalRead" class="btn btn--primary" type="button">Preview cover</button>
+            <a id="modalMore" class="btn" href="browse.html">Browse more books</a>
           </div>
         </div>
       </div>
